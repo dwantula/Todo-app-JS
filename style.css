@@ -1,0 +1,138 @@
+body {
+  background-color: black;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 30%;
+  border: 1px solid black;
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  margin: 80px auto;
+  position: relative;
+  padding: 10px 20px;
+  min-height: 400px;
+}
+
+.title {
+  background-color: #E8ECEC;
+  color: #2A2F35;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0;
+  padding: 6px;
+}
+
+.row {
+  display: flex;
+  margin: 10px ;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.button-positive {
+  background-color:#189760;
+  border: 1px solid #189760;;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.button-positive:hover {
+  background-color: #ffffff;
+  color: #189760;
+  border: 1px solid #189760;
+}
+
+.input-value {
+  border-radius: 6px;
+  height: 25px;
+  width: 180px;
+  margin-left: 60px;
+}
+
+.button-negative {
+  background-color:#FD4054;
+  color: #ffffff;
+  border: 1px solid #FD4054;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button-row {
+  margin-top: 20px;
+  margin-inline-start: auto;
+}
+
+.button-negative:hover {
+  background-color: white;
+  border: 1px solid #FD4054;
+  color: #FD4054;
+  cursor: pointer;
+}
+
+.checkmark-button {
+  height: 20px;
+  width: 20px;
+  border:1px solid green;
+  color: white;
+  background-color: white;
+  border-radius: 50px;
+  outline: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.full {
+  background-color: green;
+  cursor: pointer;
+  background-position: 1px 1px ;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+}
+
+.button-remove {
+  background-color:#FD4054;
+  color: #ffffff;
+  border: 1px solid #FD4054;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.button-remove:hover {
+  background-color: white;
+  border: 1px solid #FD4054;
+  color: #FD4054;
+  cursor: pointer;
+}
+
+.to-do-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.deletion {
+  text-decoration: line-through;
+  text-align: center;
+}
+
+tr {
+   font-size: 18px; 
+   width: 94%;
+   border-bottom: 1px solid lightgray;
+   height: 40px;
+  }
+
+ 
