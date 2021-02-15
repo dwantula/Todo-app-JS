@@ -3,6 +3,7 @@ var AddToDoList = (function () {
   var thingInput = document.getElementById('input-value');
   var addButton = document.getElementById('add-button');
   var clearButton = document.getElementById('clear');
+
   function getTasksFromLocalStorage() {
     var tasksList = LocalStorageModule.getItemFromLocalStorage('things');
     return tasksList;
@@ -31,7 +32,7 @@ var AddToDoList = (function () {
     var cellCheck = document.createElement('td');
     var checkButton = document.createElement('button');
     checkButton.addEventListener('click', function () {
-      markTaskAsDone(thing)
+      markTaskAsDone(thing.id)
       refreshTasksList()
     })
     cellCheck.appendChild(checkButton);
@@ -78,7 +79,6 @@ var AddToDoList = (function () {
       task: paragraph.innerText,
       status: 'to be done'
     }
-
     var tasksList = LocalStorageModule.getItemFromLocalStorage('things') || [];
     tasksList.push(thing);
     LocalStorageModule.saveItemInLocalStorage('things', tasksList);
@@ -86,15 +86,10 @@ var AddToDoList = (function () {
 
   function markTaskAsDone(thing) {
     var tasks = getTasksFromLocalStorage();
-
     var taskToBeChanged = tasks.find(function (task) {
-
-      return task.id === thing.id;
-
+      return task.id === thing;
     })
-    console.log(taskToBeChanged)
     taskToBeChanged.status = 'done';
-
     LocalStorageModule.saveItemInLocalStorage('things', tasks);
   }
 
@@ -102,6 +97,7 @@ var AddToDoList = (function () {
     thingsList.innerHTML = '';
     populateListWithTask();
   }
+  
   function cellCheck(row, thing) {
     var checkCell = document.createElement('td');
     var checkButton = document.createElement('button');

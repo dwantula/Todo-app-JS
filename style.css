@@ -1,15 +1,15 @@
 body {
-  background-color: black;
+  background-color: lightgray;
 }
 
 .card {
   background-color: #ffffff;
-  width: 30%;
-  border: 1px solid black;
+  width: 40%;
+  border: none;
   display: flex;
   border-radius: 6px;
   flex-direction: column;
-  margin: 80px auto;
+  margin: 150px auto;
   position: relative;
   padding: 10px 20px;
   min-height: 400px;
@@ -18,15 +18,17 @@ body {
 .title {
   background-color: #E8ECEC;
   color: #2A2F35;
+  letter-spacing: 2px;
   text-align: center;
   border-radius: 10px;
+  font-size: 30px;
   margin: 0;
   padding: 6px;
 }
 
 .row {
   display: flex;
-  margin: 10px ;
+  margin: 20px auto;
 }
 
 .table {
@@ -40,9 +42,11 @@ body {
   border: 1px solid #189760;;
   cursor: pointer;
   width: 100px;
+  color: white;
   height: 30px;
   border-radius: 6px;
   margin-left: 10px;
+  outline: 0;
 }
 
 .button-positive:hover {
@@ -54,7 +58,7 @@ body {
 .input-value {
   border-radius: 6px;
   height: 25px;
-  width: 180px;
+  width: 200px;
   margin-left: 60px;
 }
 
@@ -66,6 +70,7 @@ body {
   height: 30px;
   border-radius: 6px;
   cursor: pointer;
+  outline: 0;
 }
 
 .button-row {
@@ -95,8 +100,10 @@ body {
 .full {
   background-color: green;
   cursor: pointer;
-  background-position: 1px 1px ;
-  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  border: none;
 }
 
 .button-remove {
@@ -109,6 +116,7 @@ body {
   margin-left: 10px;
   cursor: pointer;
   margin-bottom: 5px;
+  outline: 0;
 }
 
 .button-remove:hover {
@@ -129,10 +137,10 @@ body {
 }
 
 tr {
-   font-size: 18px; 
-   width: 94%;
-   border-bottom: 1px solid lightgray;
-   height: 40px;
-  }
+  font-size: 22px; 
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+}
 
  
